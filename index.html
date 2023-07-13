@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        body{
+             margin-left: 6%;
+             margin-top: 4%;
+             margin-right: 15%;
+        }
+        
+        .search{
+            height: 24px;
+            width: 420px;
+            border: 2px solid rgb(66, 62, 62);
+            border-radius: 5px;
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+        }
+        
+        header{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 15px;
+        }
+
+        .side{
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+
+         li{
+            margin-bottom: 5px;
+            font-size: 17px;
+            list-style: none;
+        }
+        li:hover{
+            height: 23px;
+            width: 120px;
+            border: 2px solid lightgray;
+            background-color: lightgray;
+            border-radius: 2px;
+        }
+        .des{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            column-gap: 15px;
+            align-items: center;
+        }
+
+        footer{
+            border: 1px solid gray;
+            background-color: lightgray;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin-right: -228px;
+            margin-left: -90px;
+            padding: 25px;
+        }
+
+        .space div{
+            margin-bottom: 5px;
+            padding: 3px;
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .cass{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            text-align: center;
+            column-gap: 15px;
+        }
+
+        .box{
+            border: 3px solid lightgray;
+            text-align: center;
+            padding: 2px;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+
+        .add{
+            margin-top:24px;
+            background-color:rgb(143, 31, 31);
+            color:white;
+            height: 20px;
+            padding:5px;
+            width: 111px;
+        }
+        .str{
+            font-size: 20px;
+            margin-top: 15px;
+            color: gray;
+            font-weight: bold;
+        }
+
+        .spa div{
+            margin-bottom:15px ;
+        }
+
+        select,option{
+            text-decoration: none;
+        }
+
+
+        .zoom:hover{
+            -ms-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+            margin-bottom: 80px;
+            height: 255px;
+            margin-top: 25px;
+        }
+
+        #zoom2:hover{
+            -ms-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);  
+            margin-bottom: 125px;
+            margin-top: 125px;
+        }
+
+        @media(max-width:800px){
+            .menu{
+                display: block;
+            }
+
+            .search{
+                width:210px
+            }
+
+            .wine{
+                margin-top: 25px;
+                height:100px;
+                width: 100px;
+                object-fit:cover;
+            }  
+
+            .des{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                margin-left: 30px;
+            }
+
+            .des div{
+                margin-bottom: 15px;
+            }
+            .b4{
+                height: 30px;
+                width: 30px;
+            }
+            
+             .cass div{
+                display: grid;
+                grid-column: 5;
+             }
+
+             .box{
+                height: 15px;
+                width: 15px;
+             }
+
+             .zoom:hover{
+                -ms-transform: scale(1.5);
+                -webkit-transform: scale(1.5);
+                transform: scale(1.5);   
+            }
+
+            .zoom{
+                width:155px;
+                height: 50%;
+            }
+
+            #zoom2{
+                width: 100px;
+                height: 200px;
+            }
+            .res1{
+                margin-left: 30px;
+            }
+            #zoom2:hover{
+                -ms-transform: scale(1.5);
+                -webkit-transform: scale(1.5);
+                transform: scale(1.5);  
+            }
+            footer .space{
+                display:block !important;
+                color:black !important; 
+                padding:0px !important;
+                margin: 0px !important;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+            <div class="wine">
+                <img src="wine.jpg" width="80%">
+            </div>
+            <div class="side">
+                <form>
+                    <input type="text" class="search" placeholder="search" style="margin-top: 30px;">
+                </form>
+                <div>
+                    <div class="bi bi-lock-fill" style="margin-top: 28px; font-size:22px"></div><div>Login</div>
+                </div>
+            </div>
+            <div>
+                <div class="bi bi-cart-fill" style="margin-top:30px; font-size:22px"></div><div>Add to cart</div>
+            </div>
+    </header>
+    <div class="menu">
+        <div>Home</div>
+        <div>Wines</div>
+        <div>90+Point</div>
+        <div>Spirits</div>
+        <div>Beer</div>
+        <div>Wine Legend Picks</div>
+        <div>New Arrivals</div>
+        <div>Free Shipping</div>
+    </div>
+    <section>
+        <nav class="s1">
+            <ul>
+                <b style="color: rgb(108, 48, 48); margin-bottom:10px; font-size:20px">Country</b>
+                <li>Australia</li>
+                <li>France</li>
+                <li>Italy</li>
+                <li>Portugal</li>
+                <li>Spain</li>
+                <li style="margin-bottom:20px">United States</li>
+            </ul>
+            <ul>
+                <b style="color: rgb(108, 48, 48); margin-bottom:10px; font-size:20px">Type</b>
+                <li>Cider</li>
+                <li>Dessert</li>
+                <li>Madeira</li>
+                <li>Ports</li>
+                <li>Reds</li>
+                <li>Rose</li>
+                <li>Sherries</li>
+                <li>Sparkling</li>
+                <li style="margin-bottom:20px">Whites</li>
+            </ul>
+            <ul>
+            <b style="color: rgb(108, 48, 48); margin-bottom:10px; font-size:20px">Size</b>
+                <li>187ml</li>
+                <li>12 pack</li>
+                <li>250ml</li>
+                <li>375ml</li>
+                <li>500ml</li>
+                <li>6 pack</li>
+                <li>750ml</li>
+                <li>1L</li>
+                <li>1.5L</li>
+                <li style="margin-bottom:20px">3L</li>
+            </ul>
+            <ul>
+                <b style="color: rgb(108, 48, 48); margin-bottom:10px; font-size:20px">Varietal</b>
+                <li>Cabernet Sauvi..</li>
+                <li>Chardonnay</li>
+                <li>Merlot</li>
+                <li>Pinot Noir</li>
+                <li>Proprietary Red</li>
+                <li>Sauvignon Blanc</li>
+            </ul>
+            <ul>
+                <b style="color: rgb(108, 48, 48); margin-bottom:10px; font-size:20px">Winery</b>
+                <li>90+ Cellars</li>
+                <li>Barefoot</li>
+                <li>Barkan</li>
+                <li>Beringer</li>
+                <li>Sutter Home</li>
+                <li>Yellow Tail</li>
+            </ul>
+            <ul>
+                <b style="color: rgb(108, 48, 48); margin-bottom:10px; font-size:20px">Year</b>
+                <li>2016</li>
+                <li>2017</li>
+                <li>2018</li>
+                <li>2019</li>
+                <li>2020</li>
+                <li>2021</li>
+            </ul>
+            <ul>
+                <b style="color: rgb(108, 48, 48); margin-bottom:10px; font-size:20px">Region</b>
+                <li>Burgundy</li>
+                <li>California</li>
+                <li>Rhone Valley</li>
+                <li>South Eastern..</li>
+                <li>Tuscany</li>
+                <li>Veneto</li>
+            </ul>
+        </nav>        
+        <main>
+            <h1>Mumm - Brut Napa Valley Prestige NV</h1>
+            <div class="des">
+               <div>
+                    <img src="beer.jpg" class="zoom" width="155px" height="96%">
+               </div>
+               <div>
+                    <div style="margin-right: 5px; float: left; width: 25px; height: 25px; border: 1px solid #636366; display: block;">
+                        <div style="text-align: center; background-color: #636366; font-size: 12px; margin: 0px; padding: 0px 3px; line-height:
+                         12px; color: #fff;">WS</div>
+                        <div style="padding-top: 1px; font-size: 14px; font-weight: bold; background-color: #fff; text-align: center; 
+                        color: #ff0000; line-height: 12px;">91</div>
+                    </div>
+                    <div style="margin-right: 5px; float: left; width: 25px; height: 25px; border: 1px solid #636366; display: block;">
+                        <div style="text-align: center; background-color: #636366; font-size: 12px; margin: 0px; padding: 0px 3px;
+                         line-height: 12px; color: #fff;">WE</div>
+                        <div style="padding-top: 1px; font-size: 14px; font-weight: bold; background-color: #fff;
+                         text-align: center; color: #ff0000; line-height: 12px;">89</div>
+                    </div>
+                    <div>
+                        <img src="beer4.jpg" class="b4" width="11%"><br>
+                    </div>
+                    <div class="str"><strike>Price: &dollar;34.99</strike></div>
+                    <h2 style="color: rgb(107, 46, 46);">Sale Price:&dollar;21.54</h2>
+                    Qty:<span class="box">1</span>
+                    <div class="add">Add to Cart</div>
+               </div>
+               <div class="spa">
+                    <div>Producer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Mumm<br></div>
+                    <div>Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	United States<br></div>
+                    <div>Region&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	California<br></div>
+                    <div>Subregion&nbsp;&nbsp;&nbsp;&nbsp;	Napa Valley<br></div>
+                    <div>Varietal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Sparkling<br></div>
+                    <div>Sku&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	21511<br></div>
+                    <div>Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	750ml</div>
+               </div>
+            </div>
+            <div class="res1">
+            <h2 style="color: rgb(108, 48, 48)">Mumm Description</h2>
+            <p>Brut Prestige is Mumm Napa's signature sparkling wine. It is a relaxed, yet elegant, wine that earns sparkling accolades from consumers and critics alike. Brut Prestige features fine bright citrus, red apple, stone fruit and creamy vanilla aromas, with hints of toast, honey and gingerbread spice. Its vibrant flavors are balanced by fine acidity and a rich, lingering finish.</p>
+           
+            <h2 style="color: rgb(108, 48, 48)">Wine Spectator: 91 Points</h2>
+            <p>Top 100: 2014, Rank: 54. Designation: Smart Buys. Packs in a lot of complexity for the price, offering aromas of apple, fresh ginger and rubber. The flavors are crisp and layered, with notes of raspberry and spice. Drink now. 173,000 cases made.</p>
+
+            <h2 style="color: rgb(108, 48, 48)">Wine Enthusiast: 89 Points</h2>
+            <p>Mostly Pinot Noir and Chardonnay, this blend includes smaller percentages of Pinot Meunier and Pinot Gris as well. Light golden in color, it s a zingy, long-lingering taste of citrus and berry that s creamy on the palate with a floral nose.</p>
+       </div>
+            <h3 style="margin-top:35px">Customers Viewing This Page Might Also Like These Items</h3>
+            <div class="des">
+                <div>
+                    <img src="wine6.jpg"  id="zoom2" width="50%" height="40%">
+                    <h3 style="font-size:15px; margin-bottom:15px;">Domaine Saint vincent-Domaine Saint Vincent Rose NV</h3>
+                    <h4 style="color: rgb(107, 46, 46);">Sale Price:&dollar;22.97</h4>
+                    Quantity:<span class="box">1</span>
+                    <div class="add">Add to Cart</div>
+                </div>
+                <div>
+                    <img src="beer2.jpg" id="zoom2" style="margin: top -25px;" width="50%" height="48%">
+                    <h3 style="font-size:15px">Roederer Estate-Brut Anderson Valley NV</h3>
+                    <h4 style="color: rgb(107, 46, 46);">Sale Price:&dollar;13.97</h4>
+                    Quantity:<span class="box">1</span>
+                    <div class="add">Add to Cart</div>
+                </div>
+                <div>
+                    <img src="beer3.jpg" id="zoom2" width="50%" height="60%">
+                    <h3 style="font-size:15px">Korbel-Extra Dry California Champagne NV</h3>
+                    <h4 style="color: rgb(107, 46, 46);">Sale Price:&dollar;23.99</h4>
+                    Quantity:<span class="box">1</span>
+                    <div class="add">Add to Cart</div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer>
+        <div class="space">
+            <div class="title" style="margin-bottom:12px; color: rgb(108, 48, 48); font-size: 20px;">Information</div>
+            <div>View Mobile Site</div>
+            <div>Contact Us</div>
+            <div>Local Delivery</div>
+            <div>Shipping Information</div>
+            <div>Return Policy</div>
+            <div>Privacy P0licy</div>
+            <div>Terms & Conditions</div>
+        </div>
+
+        <div class="space">
+            <div class="title" style="margin-bottom:15px; color: rgb(108, 48, 48); font-size:20px">Account</div>
+            <div>Login</div>
+            <div>Create Account</div>
+            <div>My Account</div>
+            <div>Order History</div>
+        </div>
+
+        <div class="space">
+            <div class="title" style="margin-bottom:15px; color: rgb(108, 48, 48)">Our Location</div>
+            <div>277 Eisenhower Pkwy</div>
+            <div>Livingston, NJ 07039</div><br>
+            <div>Phone: (973) 992-4441</div><br>
+            <div>Mon-Sat &nbsp;10:00 am - 9:00 pm</div>
+            <div style="margin-bottom:25px;">Sun&nbsp;&nbsp;11:00 am - 5:00 pm</div>
+            <i style="margin-left:70px;margin-right:25px;font-size:26px"class="bi bi-facebook"></i>
+            <i style="margin-right:25px;font-size:26px"class="bi bi-twitter"></i>
+        </div>
+        <div>
+            <img src="map.jpg" width="265px" height="90%">
+        </div>
+        <p style="position:relative; top:30px;">Copyright &copy; 2023 All rights reserved.</p>
+    </footer>
+</body>
+</html>
